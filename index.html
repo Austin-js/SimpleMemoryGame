@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="style.css" rel="stylesheet">
+        <title>Memory Game</title>
+    </head>
+    <body>
+        <header>
+
+            <div class="title-text all-text">
+                The Memory Game
+            </div>
+
+            <div class="subtext all-text" style="margin-top: 2px;">
+                A game made as a final project for CS50
+            </div>
+        </header>
+            <div id="game-frame">
+                <div id="game-board" class="game-board">
+                    <!--The game part, JavaScript will insert buttons here-->
+                </div>
+            </div>
+
+            <button id="start-game" class="start-button">START</button>
+
+            <div class="game-info all-text">
+                <p>
+                    Score: <span id="score">0</span>
+                </p>
+                <p>
+                    Lives: <span id="lives">3</span>
+                </p>
+                <p>
+                    Highscore: <span id="highscore">0</span>
+                </p>
+            </div>
+
+                <!--HIDDEN GAME OVER SIGN-->
+                <div id="gameOverModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2>Game Over!</h2>
+                        <p>Your score: <span id="finalScore">0</span></p>
+                    </div>
+                </div>
+                <!--HIDDEN GAME OVER SIGN END-->
+        <script src="script.js"></script>
+    </body>
+</html>
